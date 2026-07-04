@@ -48,9 +48,10 @@ jobs:
 
       - name: Run tests and coverage
         run: |
-          poetry run pytest tests \
-            --cov=src \
-            --cov-report=term-missing \
-            -q \
-            -ra \
-            --durations=10
+          poetry run pytest tests
+#            if you need code coverage
+#            --cov=src \
+#            --cov-report=term-missing \
+#            -q \
+#            -ra \
+#            --durations=10
