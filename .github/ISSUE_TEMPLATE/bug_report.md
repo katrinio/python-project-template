@@ -4,7 +4,7 @@ about: Something isn't working as expected
 labels: bug
 ---
 
-## Problem
+## What happened
 
 <!-- Describe what happened and what you expected. Keep it short. -->
 
