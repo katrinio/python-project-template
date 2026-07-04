@@ -1,32 +1,28 @@
 # MVP
 
-> <!-- One sentence: the single job this project must do. -->
+## Why this exists
 
----
+- State the smallest useful version of the project.
+- Keep the scope explicit.
+
+## In scope
+
+- List the minimum user-facing behavior.
+- Keep the list short.
+
+## Out of scope
+
+- List what this version does not do.
+- Remove this section if everything fits in scope.
 
 ## Scenario
 
 ```bash
-command  # step one
-command  # step two
+command one
+command two
 ```
-
----
-
-## Commands
-
-| Task | Command |
-|---|---|
-| | |
-
----
-
-## Out of MVP scope
-
-<!-- Features deliberately deferred, separated by · -->
-
----
 
 ## Rule
 
-<!-- One sentence: the test for whether something belongs in scope. -->
+- Write the test for whether something belongs in this version.
+

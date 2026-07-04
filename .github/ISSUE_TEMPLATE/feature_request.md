@@ -4,14 +4,14 @@ about: Suggest something new or an improvement
 labels: enhancement
 ---
 
-## What problem does this solve
+## Problem
 
-<!-- Describe the context. What's inconvenient or missing? -->
+<!-- Describe the gap or inconvenience. -->
 
-## Proposed solution
+## Proposal
 
-<!-- How would you like it to work? -->
+<!-- Describe the change you want. -->
 
-## Alternatives considered
+## Alternatives
 
-<!-- Other approaches you thought about, if any -->
+<!-- List other approaches only if they matter. -->

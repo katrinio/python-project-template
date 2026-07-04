@@ -1,4 +1,4 @@
-name: 🧪 Run Quality Gates
+name: Quality tests
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   code-style:
-    name: 🎨 Code Style
+    name: Code style
     runs-on: ubuntu-latest
 
     steps:
@@ -30,7 +30,7 @@ jobs:
         run: poetry run mypy src
 
   tests-and-coverage:
-    name: 🧪 Tests + Coverage
+    name: Tests and coverage
     runs-on: ubuntu-latest
 
     steps:
@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: poetry install --no-interaction
 
-      - name: Run Tests + Coverage
+      - name: Run tests and coverage
         run: |
           poetry run pytest tests \
             --cov=src \
