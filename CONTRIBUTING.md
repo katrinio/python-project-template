@@ -27,4 +27,5 @@ All three run in CI on every PR — a red CI won't get merged.
 
 ## PR
 
-- keep it small and focused on one thing.
+- keep it small and focused on one thing;
+- commit messages on `main` drive the release version — use [conventional commits](https://www.conventionalcommits.org/) (`fix:`, `feat:`, `feat!:` for breaking changes). See [README.md](README.md#versioning).

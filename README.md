@@ -15,6 +15,7 @@ A clean starting point for small Python projects — the setup I reach for every
 - GitHub Actions workflow for code style and tests
 - `.editorconfig` for consistent formatting across editors
 - Issue and PR templates
+- Automatic semver releases from conventional commits
 
 ---
 
@@ -77,3 +78,14 @@ poetry run pytest tests --cov=src
 ```
 
 All three run in CI on every PR — see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Versioning
+
+Every push to `main` runs [semantic-release](https://github.com/semantic-release/semantic-release): it reads commit messages, decides the version bump, and creates a `vX.Y.Z` tag with a draft GitHub release. No manual version bumps, no changelog file to maintain.
+
+| Commit prefix | Bump |
+|---|---|
+| `fix:` | patch |
+| `feat:` | minor |
+| `feat!:` / `BREAKING CHANGE:` in body | major |
+| `docs:`, `test:`, `ci:`, `refactor:` | none |
