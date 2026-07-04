@@ -13,6 +13,8 @@ A clean starting point for small Python projects — the setup I reach for every
 - Pytest with coverage
 - Pre-commit hooks running the same checks as CI
 - GitHub Actions workflow for code style and tests
+- `.editorconfig` for consistent formatting across editors
+- Issue and PR templates
 
 ---
 
