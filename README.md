@@ -1,32 +1,34 @@
 # python-project-template
 
-A clean starting point for small Python projects — the setup I reach for every time instead of copy-pasting configs from an old repo.
+A starting point for small Python projects.
+
+It keeps the default setup in one place. It uses text files, predictable tooling, and the same checks in local development and CI.
 
 ---
 
-## What's inside
+## What is included
 
 - `src/` and `tests/` layout, ready for a package
 - Poetry for dependency management
 - Ruff for linting and formatting
 - Mypy in strict mode
 - Pytest with coverage
-- Pre-commit hooks running the same checks as CI
-- GitHub Actions workflow for code style and tests
+- Pre-commit hooks that run the same checks as CI
+- GitHub Actions for code style and tests
 - `.editorconfig` for consistent formatting across editors
 - Issue and PR templates
-- Automatic semver releases from conventional commits
+- Semantic version releases from conventional commits
 
 ---
 
-## Stack
+## Tooling
 
 - Python 3.14, Poetry
 - Ruff, Mypy, Pytest
 
 ---
 
-## Using this template
+## Use this template
 
 1. Click **Use this template** on GitHub (or `git clone` and re-init).
 2. Rename the package in `pyproject.toml` (`[tool.poetry] name` and `packages`).
@@ -42,20 +44,20 @@ poetry run pre-commit install
 
 ### Virtual environment on macOS
 
-Install Python 3.14 (if you don't have it yet):
+Install Python 3.14 if it is not installed:
 
 ```bash
 brew install python@3.14
 ```
 
-Point Poetry at it and create the venv:
+Point Poetry at it and create the virtual environment:
 
 ```bash
 poetry env use 3.14
 poetry install
 ```
 
-Activate the venv in your shell:
+Activate it in your shell:
 
 ```bash
 eval "$(poetry env activate)"
@@ -67,7 +69,7 @@ To deactivate:
 deactivate
 ```
 
-`poetry run <command>` works without activating the venv — use activation only if you want commands like `python` or `pytest` to resolve directly.
+`poetry run <command>` works without activating the environment. Use activation only if you want `python` or `pytest` to resolve directly.
 
 ## Checks
 
@@ -77,11 +79,11 @@ poetry run mypy src
 poetry run pytest tests --cov=src
 ```
 
-All three run in CI on every PR — see [CONTRIBUTING.md](CONTRIBUTING.md).
+These checks run in CI on every pull request. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Versioning
 
-Every push to `main` runs [semantic-release](https://github.com/semantic-release/semantic-release): it reads commit messages, decides the version bump, and creates a `vX.Y.Z` tag with a draft GitHub release. No manual version bumps, no changelog file to maintain.
+Every push to `main` runs [semantic-release](https://github.com/semantic-release/semantic-release). It reads commit messages, decides the version bump, and creates a `vX.Y.Z` tag with a draft GitHub release.
 
 | Commit prefix | Bump |
 |---|---|

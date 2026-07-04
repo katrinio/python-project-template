@@ -1,6 +1,6 @@
 # Contributing
 
-This is a template repository, but the same workflow applies to any project started from it.
+This repository is a template. The same workflow applies to projects started from it.
 
 ## Setup
 
@@ -9,7 +9,7 @@ poetry install
 poetry run pre-commit install
 ```
 
-## Before a PR
+## Before a pull request
 
 ```bash
 poetry run ruff check .
@@ -17,15 +17,15 @@ poetry run mypy src
 poetry run pytest tests --cov=src
 ```
 
-All three run in CI on every PR — a red CI won't get merged.
+These checks run in CI on every pull request.
 
 ## Style
 
-- business logic lives in `src/`, not scattered across scripts;
-- new code needs type hints — `mypy` runs in strict mode (`disallow_untyped_defs`);
-- tests are required for new modules and non-trivial logic.
+- Keep business logic in `src/`, not in scripts.
+- Add type hints to new code. `mypy` runs in strict mode.
+- Add tests for new modules and non-trivial logic.
 
-## PR
+## Pull request
 
-- keep it small and focused on one thing;
-- commit messages on `main` drive the release version — use [conventional commits](https://www.conventionalcommits.org/) (`fix:`, `feat:`, `feat!:` for breaking changes). See [README.md](README.md#versioning).
+- Keep the change small and focused.
+- Commit messages on `main` drive the release version. Use [conventional commits](https://www.conventionalcommits.org/): `fix:`, `feat:`, or `feat!:` for breaking changes. See [README.md](README.md#versioning).
