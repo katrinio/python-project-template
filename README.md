@@ -5,7 +5,7 @@ A starting point for small Python projects.
 It keeps the default setup in one place. It uses text files, predictable tooling, and the same checks in local development and CI.
 
 <div align="center">
-  <img src="docs/images/img-template-header.png" width="350"/>
+  <img src="docs/images/img-template-header.png" width="500"/>
 </div>
 
 ---
