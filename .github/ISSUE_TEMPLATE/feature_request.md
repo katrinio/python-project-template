@@ -8,10 +8,10 @@ labels: enhancement
 
 <!-- Describe the gap or inconvenience. -->
 
-## Proposal
+## Proposed solution
 
 <!-- Describe the change you want. -->
 
-## Alternatives
+## Alternatives considered
 
 <!-- List other approaches only if they matter. -->
