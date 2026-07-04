@@ -9,7 +9,7 @@ poetry install
 poetry run pre-commit install
 ```
 
-## Before a pull request
+## Before a PR
 
 ```bash
 poetry run ruff check .
@@ -25,7 +25,7 @@ These checks run in CI on every pull request.
 - Add type hints to new code. `mypy` runs in strict mode.
 - Add tests for new modules and non-trivial logic.
 
-## Pull request
+## PR
 
 - Keep the change small and focused.
 - Commit messages on `main` drive the release version. Use [conventional commits](https://www.conventionalcommits.org/): `fix:`, `feat:`, or `feat!:` for breaking changes. See [README.md](README.md#versioning).
